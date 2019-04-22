@@ -5,6 +5,9 @@
     "start": "node index"
   },
   "dependencies": {
-    "express": "latest"
+    "dbot-js": "^1.0.2",
+    "express": "latest",
+    "node-telegram-bot-api": "^0.30.0",
+    "request": "^2.88.0"
   }
 }
