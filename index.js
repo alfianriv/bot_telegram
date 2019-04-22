@@ -1,16 +1,17 @@
-const TelegramBot = require('node-telegram-bot-api');
-const request = require('request');
+const Telegram = require('node-telegram-bot-api');
+const dbot = require('dbot-js')
 
-const token = 'TELEGRAM_TOKEN';
-const simsimiKey = 'SIMSIMI_KEY';
-const url = `http://sandbox.api.simsimi.com/request.p?key=${simsimiKey}&lc=id&ft=1.0&text=`;
+const token = '839511924:AAH7t3zVeKKrv8RKdWtxkEs77fjpNRxUIME'
+const ksatria_bot = new TelegramBot(token, { polling: true });
 
-const bot = new TelegramBot(token, { polling: true });
+ksatria_bot.on('message', function(msg) {
+    var chatId = msg.chat.id;
+    var message = msg.text.toString()
 
-bot.on('message', (msg) => {
-    const chatId = msg.chat.id;
+dbot.get_response(message, function(err, result){
+     if (!err) {
+      ksatria_bot.sendMessage(chatId, result)
+     }
 
-    request(url + msg.text.toString(), (err, response, body) => {
-        bot.sendMessage(chatId, JSON.parse(body).response);
-    });
-});
+  })
+})
