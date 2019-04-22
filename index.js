@@ -15,3 +15,5 @@ dbot.get_response(message, function(err, result){
 
   })
 })
+
+module.exports = ksatria_bot
