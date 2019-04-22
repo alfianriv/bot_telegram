@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "name": "realtime-chat",
+  "scripts": {
+    "start": "node index"
+  },
+  "dependencies": {
+    "express": "latest"
+  }
+}
