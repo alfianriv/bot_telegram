@@ -1,8 +1,9 @@
 {
-  "version": 1,
   "name": "realtime-chat",
+  "version": "1.0.0",
+  "main" : "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node ."
   },
   "dependencies": {
     "dbot-js": "^1.0.2",
