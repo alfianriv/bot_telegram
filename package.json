@@ -11,9 +11,4 @@
     "node-telegram-bot-api": "^0.30.0",
     "request": "^2.88.0"
   },
-  "public": true,
-  "alias": ["alfianrivaldi.com"],
-  "github": {
-    "autoJobCancelation": false
-  }
 }
