@@ -2,8 +2,12 @@
   "name": "realtime-chat",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": "8.9.3"
+  },
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "heroku-postbuild": "ng build --prod"
   },
   "dependencies": {
     "dbot-js": "^1.0.2",
