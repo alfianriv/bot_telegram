@@ -5,6 +5,7 @@ const token = '839511924:AAH7t3zVeKKrv8RKdWtxkEs77fjpNRxUIME'
 const ksatria_bot = new Telegram(token, { polling: true });
 
 ksatria_bot.on('message', function(msg) {
+  console.log(msg)
     var chatId = msg.chat.id;
     var message = msg.text.toString()
 
