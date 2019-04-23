@@ -1,4 +1,9 @@
 {
   "version": 2,
-  "builds": [{ "src": "*.js", "use": "@now/node-server" }]
+  "builds": [{ "src": "*.js", "use": "@now/node-server" }],
+  "public": true,
+  "alias": ["alfianrivaldi.com"],
+  "github": {
+    "autoJobCancelation": false
+  }
 }
