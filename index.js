@@ -14,3 +14,9 @@ dbot.get_response(message, function(err, result){
      }
   })
 })
+
+require('http')
+  .createServer((req, res) => {
+    res.end('Hello from a vanilla server!')
+  })
+  .listen()
