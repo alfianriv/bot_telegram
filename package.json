@@ -2,7 +2,7 @@
   "version": 1,
   "name": "realtime-chat",
   "scripts": {
-    "start": "node index"
+    "start": "node index.js"
   },
   "dependencies": {
     "dbot-js": "^1.0.2",
